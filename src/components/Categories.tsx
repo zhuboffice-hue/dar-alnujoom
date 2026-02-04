@@ -45,7 +45,7 @@ const Categories = () => {
   // All categories are now treated as "featured" for display purposes
 
   return (
-    <section id="categories" className="py-24 bg-background relative overflow-hidden">
+    <section id="categories" className="py-12 md:py-24 bg-background relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div className="absolute inset-0" style={{
@@ -68,7 +68,7 @@ const Categories = () => {
         </div>
 
         {/* Categories Grid - All categories with full cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 md:mb-12">
           {categories.map((category, index) => {
             const Icon = category.icon;
             const isHovered = hoveredIndex === index;

@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
-        ? "bg-background/95 backdrop-blur-lg shadow-elegant py-3"
+        ? "bg-black/30 backdrop-blur-xl shadow-lg py-3 border-b border-white/10"
         : "bg-transparent py-5"
         }`}
     >
@@ -35,7 +35,7 @@ const Header = () => {
           <img
             src="/logo-gold.png"
             alt="Dar Alnujoom Logo"
-            className="h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+            className="h-16 md:h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
           />
         </a>
 
@@ -45,10 +45,10 @@ const Header = () => {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-foreground/80 hover:text-gold transition-colors duration-300 relative group"
+              className="text-sm font-medium text-gold hover:text-primary transition-colors duration-300 relative group"
             >
               {link.label}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gold transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
           <Button
@@ -62,7 +62,7 @@ const Header = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden p-2 text-foreground"
+          className="md:hidden p-2 text-gold"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -72,13 +72,13 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-background/98 backdrop-blur-lg border-b border-border animate-slide-up">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-black/80 backdrop-blur-xl border-b border-white/10 animate-slide-up h-screen">
           <nav className="container mx-auto px-4 py-6 flex flex-col gap-4">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-base font-medium text-foreground/80 hover:text-gold transition-colors py-2"
+                className="text-base font-medium text-gold hover:text-primary transition-colors py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.label}
