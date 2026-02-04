@@ -1,0 +1,15 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Swooshes - Two Thin Curves -->
+  <path d="M10 40 Q 32 30, 54 38" stroke="#DA960F" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  <path d="M14 46 Q 32 38, 50 44" stroke="#DA960F" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8" />
+  
+  <!-- Stars -->
+  <!-- Low Left -->
+  <path d="M18 24 L19 26 L21 26 L19.5 27.5 L20 29.5 L18 28.5 L16 29.5 L16.5 27.5 L15 26 L17 26 Z" fill="#DA960F" />
+  
+  <!-- Top Center (Main) -->
+  <path d="M32 12 L34 16 L38 16 L35 19 L36 23 L32 21 L28 23 L29 19 L26 16 L30 16 Z" fill="#DA960F" />
+  
+  <!-- Low Right -->
+  <path d="M46 24 L47 26 L49 26 L47.5 27.5 L48 29.5 L46 28.5 L44 29.5 L44.5 27.5 L43 26 L45 26 Z" fill="#DA960F" />
+</svg>

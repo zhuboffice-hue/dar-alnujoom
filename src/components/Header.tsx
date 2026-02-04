@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -31,18 +32,11 @@ const Header = () => {
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <a href="#home" className="flex items-center gap-3 group">
-          <div className="relative">
-            <Star className="w-8 h-8 text-gold fill-gold/20 group-hover:fill-gold/40 transition-all duration-300" />
-            <Star className="w-4 h-4 text-gold fill-gold absolute -top-1 -right-1 animate-float" />
-          </div>
-          <div className="flex flex-col">
-            <span className="font-display text-xl font-semibold text-foreground tracking-wide">
-              DAR ALNUJOOM
-            </span>
-            <span className="text-xs text-muted-foreground tracking-[0.2em] uppercase">
-              Trading L.L.C
-            </span>
-          </div>
+          <img
+            src="/logo-gold.png"
+            alt="Dar Alnujoom Logo"
+            className="h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+          />
         </a>
 
         {/* Desktop Navigation */}
